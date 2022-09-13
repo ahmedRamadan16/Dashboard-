@@ -1,0 +1,119 @@
+.page{
+    .sidebar{
+        position: fixed;
+        left: 0;
+        width: 400px;
+        height: 100vh;
+        background-color: $main-color;
+        color: #fff;
+        overflow: hidden;
+        z-index: 999;
+        transition: .3s ease-in;
+        @include breakBoints(Tablet)
+        {
+        left: -100%;
+        }
+        @include breakBoints(Mobile)
+        {
+            left: -108%;
+        }
+        &.no-sidebar{
+            width: 100px;
+        }
+        &.no-sidebar-sm{
+            left: 0;
+            width: 100%;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .brand{
+            display: flex;
+            gap: 1rem;
+            padding: 20px 20px 20px 35px;
+            align-items: center;
+            ion-icon {
+                font-size: 3rem;
+            }
+            span{
+                font-size: 25px;
+                white-space: nowrap;
+
+            }
+        }
+            .close-sidebar-sm ion-icon{
+                font-size: 4rem;
+                cursor: pointer;
+            }
+        }
+        .links{
+            padding-left: 20px;
+            li{
+                
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;
+                &:hover,&.active{
+                    background-color: #fff;
+                }
+
+                a{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                padding: 1rem;
+                background-color: transparent;
+                margin-bottom: 2rem;
+                position: relative;
+                color: #fff;
+                text-decoration: none;
+                transition: .3s ease-in;
+                    cursor: pointer;
+                    white-space: nowrap;
+                
+            
+                ion-icon{
+                    font-size: 3rem;
+                }
+                span{
+                    font-size: 20px;
+                }
+            
+            
+            }
+            &:hover a,&.active a{
+                color: $main-color
+            }
+            &:hover a::before,&.active a::before
+                {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: -50px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    box-shadow: 35px 35px 0 10px #fff;
+                    transition: .3s ease-in;
+
+                }
+                &:hover a::after,&.active a::after
+                {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: -50px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    box-shadow: 35px -35px 0 10px #fff;
+                    transition: .3s ease-in;
+
+
+                }
+        }
+        }
+    }
+}

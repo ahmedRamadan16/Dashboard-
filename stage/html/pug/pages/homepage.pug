@@ -1,0 +1,170 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Dashboard
+        include ../helpers/links.pug  
+    body 
+        .page.home-page 
+            include ../components/sidebar.pug
+            
+            .content-area
+                .container-fluid
+                    include ../components/header.pug 
+                    .statistics 
+                        .col.stats 
+                            .numbers 
+                                span 1,504
+                                span Daily Views 
+                            .icon 
+                                ion-icon(name='eye-outline')
+                        .col.stats 
+                            .numbers 
+                                span 80
+                                span Sales 
+                            .icon 
+                                ion-icon(name='cart-outline')
+                        .col.stats 
+                            .numbers 
+                                span 1,504
+                                span Daily Views 
+                            .icon 
+                                ion-icon(name='eye-outline')
+                        .col.stats 
+                            .numbers 
+                                span $7,842
+                                span Earning 
+                            .icon 
+                                ion-icon(name='cash-outline')
+                    .middle-section
+                        .recent-order 
+                            .head 
+                                h2 Recent Orders 
+                                span View All
+                            .row 
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Name 
+                                                li Price 
+                                                li Payment 
+                                                li Status 
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Star Refrigerator 
+                                                li $1200
+                                                li Paid
+                                                li.btn.btn-success Delivered
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Window Coolers 
+                                                li $110
+                                                li Due
+                                                li.btn.btn-warning Pending
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Speakers 
+                                                li $620
+                                                li Paid
+                                                li.btn.btn-danger Return 
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Hp Laptop 
+                                                li $110
+                                                li Due
+                                                li.btn.btn-primary In Progress
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Apple Watch  
+                                                li $1200
+                                                li Paid
+                                                li.btn.btn-success Delivered
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Wall Fan 
+                                                li $110
+                                                li Paid
+                                                li.btn.btn-warning Pending
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Adidas Shoes  
+                                                li $620
+                                                li Paid
+                                                li.btn.btn-danger Return
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Denim Shirts  
+                                                li $110
+                                                li Due
+                                                li.btn.btn-primary Return
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Casual Shoes  
+                                                li $575
+                                                li Paid
+                                                li.btn.btn-warning Return
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Wall Fan  
+                                                li $110
+                                                li Paid
+                                                li.btn.btn-warning Return
+                                        .box 
+                                            ul.list-unstyled 
+                                                li Denim Shirts  
+                                                li $110
+                                                li Due
+                                                li.btn.btn-primary Return
+                        .recent-customers 
+                                .head
+                                    h2 Recent Customers
+                                .customer 
+                                    img(src="imgs/img1.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img2.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img3.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img4.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img5.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img6.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img7.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img8.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+                                .customer 
+                                    img(src="imgs/img9.jpg", alt="", srcset="" class="rounded-circle")
+                                    .info 
+                                        h2 David 
+                                        span Italy 
+
+
+        include ../helpers/scripts.pug
+        

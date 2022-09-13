@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  1rem;
+    .toggle-sidebar {
+        ion-icon{
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    
+    }
+    .search-box{
+        border: 1px solid #ccc;
+        padding: .5rem;
+        border-radius: 40px;
+        width: 400px;
+        display: flex;
+        align-items: center;    
+        input{
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 90%;
+        }
+        ion-icon{
+            font-size: 18px;
+        }
+    }
+    .avatar{
+        img{
+            width: 4rem;
+            aspect-ratio: 1/1;
+        }
+    }
+}
