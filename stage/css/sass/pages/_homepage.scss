@@ -110,7 +110,11 @@
                 
             }
                 .row {
+                    @include breakBoints(Mobile)
+                    {
                     width:602px;
+
+                    }
                     .box{
                         margin: 1rem 0 0;
                          cursor: pointer;
